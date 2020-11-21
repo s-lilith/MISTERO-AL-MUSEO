@@ -1,0 +1,47 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#navigationBar{
+    margin-bottom: 0;
+}
+
+#showcase{
+    flex: 1 0 auto;
+    height: 80%;
+    width: 100%;
+    background-color: rgb(185, 185, 185);
+    
+}
+
+#main{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#main h1{
+    font-size: 10vh;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 10px;
+    height: 12%;
+    width: 100%;
+    color: rgb(151, 151, 151);
+    background-color: rgb(136, 1, 1);
+    text-align: center;
+}
+
+

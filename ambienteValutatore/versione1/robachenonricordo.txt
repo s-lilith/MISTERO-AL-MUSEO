@@ -1,0 +1,22 @@
+//** */ //SELECTORS
+// const punteggi=document.querySelector(".punteggi-btn");
+// const stato=document.querySelector(".stato-btn");
+// const valuta=document.querySelector(".valuta-btn");
+
+// //EVENT LISTENERS
+// punteggi.addEventListener("click", getPunteggi);
+
+// // CONTROLLA PUNTEGGI
+// function getPunteggi(){
+
+//   //punteggiDiv
+//   const punteggiDiv=document.createElement("div");
+//   punteggiDiv.classList.add("list");
+
+//   //crea lista
+//   const newPunteggio=document.createElement("li");
+//   newPunteggio. /* aggiure var che segna punti giocatori */
+
+/**
+ * ambiente
+ */

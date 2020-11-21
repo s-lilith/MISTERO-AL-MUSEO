@@ -1,0 +1,103 @@
+/*  media screen*/
+
+@media screen and (max-height: 450px) {
+    .nav-ul {padding-top: 15px;}
+    .nav-ul a {font-size: 18px;}
+}
+
+@media screen and (max-width: 570px){
+    /* creazione sidebar full-width */
+   .nav-ul{
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #747C92;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+    text-align: center;
+   }
+
+   .nav-ul a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: rgb(145, 68, 68);
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 50px;
+   }
+
+   .nav-ul a:hover{
+       color: rgb(212, 165, 165);
+   }
+
+   .nav-ul .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+   }
+
+   .closebtn{
+    visibility: visible;
+    margin-top: 0;
+   }
+
+
+    .icon{
+    visibility: visible;
+    float: right;
+    }
+
+    header h1{
+    font-size: 30px;
+    }
+
+    #showcase{
+    top: 0;
+    right: 0;
+    padding-bottom: 20vh;
+
+    }
+
+   
+        
+}
+
+
+@media screen and (max-width: 728px){
+    header h1{
+        font-size: 15px;
+    }
+
+    header li{
+        padding: 2px;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 935px){
+    header h1{
+        font-size: 20px;
+    }
+
+    header li{
+        padding: 0 10px 0 10px;
+    }
+
+    .nav-ul a{
+        /* font-size: ; */
+        margin: 0;
+    }
+
+    #showcase button{
+        width: 50%;
+        margin: 5px
+        }
+   
+  }

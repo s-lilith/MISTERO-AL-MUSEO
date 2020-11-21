@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>M & M - Mistero al Museo | Benvenuto</title>
+
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="creator" content="Sharone Oulato, Mauro Mighela, Filippo Bolognesi, Alice Govoni">
+    <meta name="subject" content="quiz, game">
+    <meta name="description" content="Mistero al Museo è un'applicazione web interrattiva ideata per intrattenere i ragazzi"> 
+    <meta name="format" content="text/html">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <script src="./app.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+     <!-- navbar -->
+     <nav class="navbar navbar-inverse" id="navigationBar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="./index.html" class="navbar-brand"><span class="highlight"> M & M</span> | MISTERO AL MUSEO</a>
+            </div>
+            <div class="collapse navbar-collapse float-right" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active current"><a href="./index.html">HOME</a></li>
+                <li><a href="./game.html">GIOCA!</a></li> <!-- non ci deve essere perchè è una one page app -->
+                <li><a href="./personalizza.html">PERSONALIZZA LA TUA STORIA!</a></li>
+                </ul>
+        </div>
+    </nav>
+
+
+    <!-- SHOWCASE -->
+    <section id="showcase">
+        <div class="container">
+            <h1 style="margin-top:0 ">PERSONALIZZA LA TUA STORIA</h1>
+
+            <div class="choose">
+                <label>Scegli il tuo pubblico</label><select id="agePicker" onchange="setPage()">
+                    <option value="">7-10</option> <!-- il value dovrebbe essere il nome della storia -->
+                    <option value="">11-14</option><!-- MA QUALCUNO HA DECISO DI NON FARE L'UNICO COMPITO CHE AVEVA -->
+                    <option value="">15-18</option>
+                </select>
+                <hr>
+                
+            </div>
+
+            </div>
+    </section>
+
+    <footer> <!--page-footer font-small special-color-dark pt-4 fixed-bottom -->
+        <div class="container text-center">
+        <p> MISTERO AL MUSEO <br> Copyright &copy; 2020 <br> ALMA MATER STUDIORUM - Universit&aacute; di Bologna</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+//** */ //SELECTORS
+// const punteggi=document.querySelector(".punteggi-btn");
+// const stato=document.querySelector(".stato-btn");
+// const valuta=document.querySelector(".valuta-btn");
+
+// //EVENT LISTENERS
+// punteggi.addEventListener("click", getPunteggi);
+
+// // CONTROLLA PUNTEGGI
+// function getPunteggi(){
+
+//   //punteggiDiv
+//   const punteggiDiv=document.createElement("div");
+//   punteggiDiv.classList.add("list");
+
+//   //crea lista
+//   const newPunteggio=document.createElement("li");
+//   newPunteggio. /* aggiure var che segna punti giocatori */
+
+/**
+ * ambiente
+ */
+
+
+Aggiornare il contenuto di un DIV prelevando dati da un database remoto
+<script>
+$(document).ready(function() {
+  $("#modificaTesto").click(function() {
+    $.ajax({
+      url: "mioscript.php",
+      success: function(output) {
+        $("#boxContenuto").html(output);
+      }
+    });
+  });
+});
+</script>
+
+Il codice in questione si collega ad uno script lato-server (nell'esempio "mioscript.php") che si connette ad un database, preleva i dati richiesti e compone un output in HTML il quale viene intercettato e dinamicamente inniettato nel DIV.
+
+Volendo è anche possibile inviare dei dati allo script lato-server attraverso il parametro data in questo modo:
+
+<script>
+$(document).ready(function() {
+  $("#modificaTesto").click(function() {
+    $.ajax({
+      url: "mioscript.php",
+      data: "nome=Mario&cognome=Rossi",
+      success: function(output) {
+        $("#boxContenuto").html(output);
+      }
+    });
+  });
+});
+</script>
+
+Così facendo si realizzerà una perfeta interazione tra l'interfaccia utente e la base dati (in quanto la prima sarà in grado di interagire con la seconda).
+https://www.mrw.it/jquery/lavorare-ajax_10463.html

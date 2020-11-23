@@ -64,3 +64,20 @@ footer{
 }
 
 
+@media screen and (max-width:450px){
+    #main h1{
+        font-size: 7vh;
+    }
+
+    button{
+        /* width: 90%; */
+        margin: 0;
+        display: block;
+        /* padding: 10px; */
+        
+    }
+
+    .buttons{
+        padding-left: 35px;
+    }
+}
